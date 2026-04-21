@@ -1,4 +1,4 @@
-# claude-max-monitor
+# claude-code-monitor
 
 A macOS menu bar widget (via [SwiftBar](https://swiftbar.app/)) for Claude.ai Pro/Max subscribers. Shows at a glance:
 
@@ -51,7 +51,7 @@ On first launch SwiftBar asks for a plugin folder.
 ### 2. Clone this repo
 
 ```bash
-git clone https://github.com/AlexandrosAT/claude-max-monitor.git ~/claude-max-monitor
+git clone https://github.com/AlexandrosAT/claude-code-monitor.git ~/claude-code-monitor
 ```
 
 (Or anywhere you prefer.)
@@ -61,7 +61,7 @@ git clone https://github.com/AlexandrosAT/claude-max-monitor.git ~/claude-max-mo
 Click the SwiftBar icon → **Preferences → Plugin Folder** → select:
 
 ```
-~/claude-max-monitor/plugin
+~/claude-code-monitor/plugin
 ```
 
 > **Important:** point SwiftBar at `plugin/`, **not** the repo root. SwiftBar tries to run every file in its plugin folder, and the README / LICENSE at the repo root would show up as broken plugins.
@@ -86,7 +86,7 @@ If you *want* a near-zero-cost variant that also refreshes the cache while you'r
 // in your statusline JS, right after parsing the stdin JSON
 if (data.rate_limits) {
   require('fs').writeFileSync(
-    '/absolute/path/to/claude-max-monitor/plugin/.data/rate-limits.json',
+    '/absolute/path/to/claude-code-monitor/plugin/.data/rate-limits.json',
     JSON.stringify({ rate_limits: data.rate_limits, written_at: Math.floor(Date.now()/1000) })
   );
 }
@@ -97,7 +97,7 @@ This doesn't replace the headless poll - SwiftBar still runs the plugin every 10
 ## File layout
 
 ```
-claude-max-monitor/
+claude-code-monitor/
 ├── README.md           <- you are here
 ├── LICENSE
 ├── .gitignore

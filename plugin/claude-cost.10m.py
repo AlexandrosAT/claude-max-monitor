@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # <xbar.title>Claude Code Cost + Rate Limits</xbar.title>
 # <xbar.desc>Rolling 30-day notional cost + Max subscription 5h/7d rate-limit utilization.</xbar.desc>
-# <xbar.author>https://github.com/AlexandrosAT/claude-max-monitor</xbar.author>
+# <xbar.author>https://github.com/AlexandrosAT/claude-code-monitor</xbar.author>
 # <swiftbar.hideAbout>true</swiftbar.hideAbout>
 # <swiftbar.hideRunInTerminal>true</swiftbar.hideRunInTerminal>
 # <swiftbar.hideDisablePlugin>true</swiftbar.hideDisablePlugin>
