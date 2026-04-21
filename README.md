@@ -123,6 +123,7 @@ To change refresh cadence, rename the plugin file: SwiftBar reads the refresh in
 ## Limitations
 
 - **Cost is notional.** Pro/Max are flat subscriptions, not pay-per-use - this figure is "what your usage would cost at API rates". Useful for comparing against the sub price; not a real bill.
+- **Cost is per-device.** It reads only this machine's `~/.claude/projects/` logs. If you run Claude Code on multiple machines, each menu bar shows its own local number - they don't sync. The **rate-limit percentages** are server-side and reflect usage across all your devices.
 - **30-day window is rolling**, not calendar month.
 - **Dedup is per-message-id.** Claude Code writes the same assistant response into multiple JSONLs (main session log + subagent logs + session resumes). Deduping by `message.id` matches what the API actually billed.
 - **1M-context Opus** is priced at standard Opus rates. Anthropic's 1M-context pricing isn't wired in; conservative underestimate.
