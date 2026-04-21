@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# runtime cache - rewritten on every poll
+plugin/.data/rate-limits.json
+
+# Python
+__pycache__/
+*.pyc
